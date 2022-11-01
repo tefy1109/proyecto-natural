@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,9 +9,14 @@
 }
 
 body {
+    background-image: url(https://veigler.com/wp-content/uploads/2020/10/medicina-alternativa-e1620818786712.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #080808;
+    font-weight: bolder;
     font-family: 'Montserrat';
 }
-
 
 .contenedor {
     padding: 60px 0;
@@ -30,15 +35,6 @@ body {
 
 /* Header */
 
-.header{
-    height: 100vh;
-    /* 02 */
-    background-image: linear-gradient(to top, rgba(194, 251, 221, 0.486) 0%, hsla(250, 68%, 79%, 0.514) 100%), url(img/fondo.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    
-}
 .head{
     padding: 0;
     height: 100%;
@@ -109,33 +105,50 @@ body {
     color:#fff;
 }
 
-.wave{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+form{
+    margin: 40px 40px;
 }
 
-/* farmacognosia */
-
-main .sobre-farmacognosia{
-    padding: 30px 0 60px 0;
-}
-.contenedor-sobre-farmacognosia{
-    display: flex;
-    justify-content: space-evenly;
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
 }
 
-.imagen-farmacognosia{
-    width: 48%;
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
 }
 
-.sobre-farmacognosia .contenido-textos{
-    width: 48%;
+.checkbox{
+    margin:20px 0;
 }
 
-.contenido-textos h3{
-    margin-bottom: 15px;
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color:white;
+    background: orange;
+    border:none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor:pointer;
 }
+
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.2);
+}
+
+table{
+    margin: 40px 40px;
+}
+
 
 .contenido-textos h3 span{
     background: #19f0ed;
@@ -155,99 +168,6 @@ main .sobre-farmacognosia{
     font-weight: 300;
     text-align: justify;
 }
-
-/* Galeria */
-
-
-.botiquin{
-    background: #f2f2f2;
-}
-
-.galeria-bot{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.imagen-bot{
-    width: 24%;
-    margin-bottom: 10px;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
-}
-
-.imagen-bot > img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.hover-galeria{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    transform: scale(0);
-    background: rgba(6, 119, 132, 0.7);
-    transition: transform .5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.hover-galeria img{
-    width: 50px;
-}
-
-.hover-galeria p{
-    color: #fff;
-}
-
-.imagen-bot:hover .hover-galeria{
-    transform: scale(1);
-}
-
-/* Vivencias */
-
-.cards{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.cards .card{
-    background: #35f6f6;
-    display: flex;
-    width: 46%;
-    height: 200px;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 5px;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
-}
-
-.cards .card img{
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border: 3px solid #fff;
-    border-radius: 50%;
-    display: block;
-}
-
-.cards .card > .contenido-texto-card{
-    width: 60%;
-    color: #fff;
-}
-
-.cards .card > .contenido-texto-card p{
-    font-weight: 300;
-    padding-top: 5px;
-}
-
 /*  Our team */
 
 .about-contacto{

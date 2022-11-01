@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ProyectoNatural</title>
+    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="form.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800&display=swap" rel="stylesheet"> 
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header" id="inicio">
+        <img class="hamburguer" src="img/hamburguesa.svg" alt="">
+        <nav class="menu-navegacion">
+            <a href="/index.html#inicio">Inicio</a>
+            <a href="/index.html#farmacognosia">Farmacognosia</a>
+            <a href="/index.html#botiquin">Botiquin</a>
+            <a href="/index.html#vivencias">Vivencias</a>
+            <a href="/index.html#contacto">Contacto</a>
+        </nav>
+        <div class="contenedor head">
+        <section class="textos-header">
+            <h1>Medicina Natural</h1>
+            <h2>A tu alcance</h2>
+        </section>
+        </div>
+        
+    </header>
+    <main>
+        <form>
+            <label for="nombreapellido">Nombre y Apellido</label>
+            <input type="text" id="nombreapellido" class="input-padron" required>
+
+            <br>
+
+            <label for="correoelectronico">Correo Electrónico</label>
+            <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+
+            <br>
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
+
+            <br>
+
+            <label for="mensaje">Mensaje</label>
+
+            <br>
+            
+            <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+            
+            <fieldset>
+                <legend>¿Cómo le gustaría que lo contactemos?</legend>
+
+                <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                
+                <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
+                
+                <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                
+            </fieldset>
+           
+            <fieldset>
+                <legend>¿En cuál horario prefiere ser contactado?</legend>
+                <select>
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                    <option>Noche</option>
+                </select>
+            </fieldset>
+            
+            <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de nuevas medicinas naturales?</label>                
+            
+            <input type="submit" value="Enviar formulario" class="enviar">
+
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Día</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td>08h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Miércoles</td>
+                    <td>08h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>08h ~ 20h</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+        
+        <section class="about-contacto" id="contacto">
+            <div class="contenedor">
+                <h2 class="titulo">Contacta con nosotros</h2>
+                <div class="servicio-cont">
+                    <div class="servicio-ind">
+                        <img src="img/businnes.svg" alt="">
+                        <h3>Dra. Carmen Molina</h3>
+                        <p><center>Farmaceutico y Bioanalista
+                            <br> Tel: 11-45559999</center> 
+                        </p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="img/Consulting.svg" alt="">
+                        <h3>Sede</h3>
+                        <p><center>Visitanos</center> </p>
+                        <div class="media-map-container">
+                            <div class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.24991726048!2d-58.39981568477048!3d-34.59784138046102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca94324c03f9%3A0x2d9366f8989a8601!2sFacultad%20de%20Farmacia%20y%20Bioquimica!5e0!3m2!1ses-419!2sar!4v1667249290115!5m2!1ses-419!2sar"
+                                width="200" 
+                                height="150" 
+                                style="border:0;" allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="img/send.svg" alt="">
+                        <h3>Formulario de contacto</h3>
+                        <p> <center>Haz clic aqui</center> </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor-footer-content">
+                <div class="social-media">
+                        <a href="./" class="social-media-icon">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+                        <a href="./" class="social-media-icon">
+                            <i class='bx bxl-twitch'></i>
+                        </a>
+                        <a href="./" class="social-media-icon">
+                            <i class='bx bxl-instagram'></i>
+                        </a>
+                </div>
+            </div> 
+            </div>
+        </div>
+        <br>
+            <div class="line"></div>
+
+        <div><h2 class="titulo-final">&copy; Estefany | Constanza</h2></div>
+    </footer>
+    <script src="/menu.js"></script>
+</body>
+
+</html>
